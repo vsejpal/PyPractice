@@ -50,7 +50,7 @@ nth_last = NthLast()
 head = nth_last.setupList()
 nth_last.printList(head)
 print ''
-print nth_last.findNthLast(head, 3)
+print nth_last.findNthLast(head, 2)
 
 
 
