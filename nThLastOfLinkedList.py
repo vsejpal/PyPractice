@@ -30,7 +30,6 @@ class NthLast:
         slow = head
 
         for i in range(0, n-1):
-            print 'i = ' + str(i)
             fast = fast.next
 
         while fast.next != None:
@@ -51,7 +50,7 @@ nth_last = NthLast()
 head = nth_last.setupList()
 nth_last.printList(head)
 print ''
-print nth_last.findNthLast(head, 2)
+print nth_last.findNthLast(head, 3)
 
 
 
