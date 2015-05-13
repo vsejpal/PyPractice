@@ -1,6 +1,11 @@
 __author__ = 'vsejpal'
 
 class Primes:
+    '''
+        In theory this algorithm is O (n log log n), however I have a strong feeling it is O (n log n)
+        because, we iterate the number list once (n) and for each item  'p' we start at its 'p-square' and mark off items in steps of 'p'
+        thus with as we advance through the list, we cut are 'items to be marked off' nearly by half, just like binary search
+    '''
     def find_primes_before(self, num):
         bool_list = [True] * (num+1)
         primes = []
@@ -21,3 +26,5 @@ class Primes:
         return primes
 
 print Primes().find_primes_before(100)
+
+
